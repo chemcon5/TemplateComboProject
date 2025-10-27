@@ -58,6 +58,7 @@ double getShippingCost(int ShippingMethod, double cost_of_order) {
       }
       else {
          cout << "Free" << endl;
+         
       }
    }
    return ShippingCost;
