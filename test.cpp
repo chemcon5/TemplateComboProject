@@ -65,11 +65,12 @@ int main() {
    double cost_of_order;
    double ShippingCost;
    cout << "Enter the cost of your order: " << endl;
-   cin >> cost_of_order >> endl;
+   cin >> cost_of_order;
    cout << "Enter your Shipping Method: "<< endl; 
-
-   cout << "Total is" << endl;
-}
+   cin >> ShippingMethod;
+   cout << "Total is" << ShippingCost << endl;
+   
+} 
 ///----------------------------------------------------------------------------------
 /// Tests
 /// Uncomment tests to work on them. Make sure any test that does not compile or
