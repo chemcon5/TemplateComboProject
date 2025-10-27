@@ -81,7 +81,7 @@ int main() {
 
    double ShippingCost = getShippingCost(ShippingMethod, cost_of_order);
 
-    if (ShippingCost != -1) {
+    if (ShippingCost = -1) {
         cout << "Shipping cost is: " << ShippingCost << endl;
         cout << "Total is: " << cost_of_order + ShippingCost << endl;
     }
