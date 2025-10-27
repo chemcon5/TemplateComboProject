@@ -51,7 +51,7 @@ double getShippingCost(int ShippingMethod, double cost_of_order) {
       if (cost_of_order < 35) {
          ShippingCost = 5;
       }
-      else if (cost_of_order = 35 && cost_of_order < 100) {
+      else if (cost_of_order >= 35 && cost_of_order < 100) {
          ShippingCost = 8;
       }
       else {
