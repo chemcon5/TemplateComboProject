@@ -44,8 +44,7 @@ double getShippingCost(int ShippingMethod, double cost_of_order) {
          ShippingCost = cost_of_order * 0.02 + 10;
       }
       else {
-         cout << "Free" << endl;
-         ShippingCost = -1;
+         ShippingCost = -2;
       }
    }
    else if (ShippingMethod == 3) {
@@ -57,8 +56,7 @@ double getShippingCost(int ShippingMethod, double cost_of_order) {
          ShippingCost = 8;
       }
       else {
-         cout << "Free" << endl;
-         ShippingCost = -1;
+         ShippingCost = -2;
       }
    }
    return ShippingCost;
