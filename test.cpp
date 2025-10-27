@@ -36,7 +36,9 @@ double getShippingCost(int ShippingMethod, double cost_of_order) {
       else (ShippingCost >= 500) {
         ShippingCost = order_cost * 0.1;
    }
-
+   if (ShippingMethod == 2) {
+      
+   }
 }
 
 
