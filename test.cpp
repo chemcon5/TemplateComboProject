@@ -17,6 +17,7 @@ using doctest::Approx;
 //-----------------------------------------------------------------------------------
 
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 
