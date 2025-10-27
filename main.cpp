@@ -68,7 +68,7 @@ double getShippingCost(int ShippingMethod, double cost_of_order) {
                                                                                                                                                                                                                            cout << "Enter the cost of your order: " << endl;
                                                                                                                                                                                                                               cin >> cost_of_order;
 
-                                                                                                                                                                                                                                  if (cost_of_order < 0 ) {
+                                                                                                                               if (cost_of_order < 0 ) {
                                                                                                                                                                                                                                           cout << "Bad Input" << endl;
                                                                                                                                                                                                                                                   return 1; 
                                                                                                                                                                                                                                                       }
