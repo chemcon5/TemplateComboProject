@@ -74,12 +74,17 @@ int main() {
         cout << "Bad Input" << endl;
         return 1; 
     }
-    
+
    cout << "Enter your Shipping Method: "<< endl; 
    cin >> ShippingMethod;
 
    double ShippingCost = getShippingCost(ShippingMethod, cost_of_order);
-   cout << "Total is " << ShippingCost << endl;
+   
+    if (ShippingCost != -1) {
+        cout << "Shipping cost is: " << ShippingCost << endl;
+        cout << "Total is: " << cost_of_order + ShippingCost << endl;
+    }
+
    
    return 0;
 } 

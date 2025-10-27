@@ -11,5 +11,8 @@
     "editor.formatOnSave": true,
     "debug.onTaskErrors": "showErrors",
     "extensions.ignoreRecommendations": true,
-    "chat.disableAIFeatures": true
+    "chat.disableAIFeatures": true,
+    "files.associations": {
+        "iostream": "cpp"
+    }
 }
