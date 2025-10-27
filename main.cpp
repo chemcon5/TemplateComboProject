@@ -83,10 +83,10 @@ int main() {
 
    double ShippingCost = getShippingCost(ShippingMethod, cost_of_order);
 
-   if (ShippingCost = -1) {
+   if (ShippingCost == -1) {
       cout << "Not available" << endl;
    }
-  else if (ShippingCost = -2) {
+  else if (ShippingCost == -2) {
        cout << "Free" << endl;
   }
   else {
