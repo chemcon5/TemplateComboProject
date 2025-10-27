@@ -45,7 +45,7 @@ double getShippingCost(int ShippingMethod, double cost_of_order) {
          cout << "Free" << endl;
       }
    }
-   if (ShippingMethod == 3) {
+   else if (ShippingMethod == 3) {
       cout << "Standard Delivery" << endl;
       if (cost_of_order < 35) {
          ShippingCost = "$5"
