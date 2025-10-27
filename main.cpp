@@ -67,7 +67,7 @@ double getShippingCost(int ShippingMethod, double cost_of_order) {
   return ShippingCost;
 }
 
-int main() {
+int main() {{}
   int ShippingMethod=0;
   double cost_of_order;
 
@@ -99,7 +99,7 @@ int main() {
         cout << "Total is: " << cost_of_order + ShippingCost << endl;
       }
     return 0;
-
+}
 ///----------------------------------------------------------------------------------
 /// Tests
 /// Uncomment tests to work on them. Make sure any test that does not compile or
