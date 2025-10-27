@@ -58,6 +58,7 @@ double getShippingCost(int ShippingMethod, double cost_of_order) {
          cout << "Free" << endl;
       }
    }
+   return ShippingCost;
 }
 
 int main() {
@@ -71,6 +72,7 @@ int main() {
    cin >> ShippingMethod;
    cout << "Total is " << ShippingCost << endl;
    
+   return 0;
 } 
 ///----------------------------------------------------------------------------------
 /// Tests
