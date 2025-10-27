@@ -30,7 +30,6 @@ double getShippingCost(int ShippingMethod, double cost_of_order) {
       if (cost_of_order < 100) {
           cout << "Not Available" << endl;
       }
-   }
       else if (cost_of_order >=100 || < 500) {
            ShippingCost == 50;
    }
