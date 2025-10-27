@@ -67,7 +67,7 @@ double getShippingCost(int ShippingMethod, double cost_of_order) {
   return ShippingCost;
 }
 
-int main() {{}
+int main() {
   int ShippingMethod=0;
   double cost_of_order;
 
