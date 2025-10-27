@@ -95,7 +95,8 @@ int main() {
       else if (ShippingCost = -2) {
         cout << "Free" << endl;
       }                                                                                                                                                                                                                               else {
-      else << "Total is: " << cost_of_order + ShippingCost << endl;
+      else {
+        cout << "Total is: " << cost_of_order + ShippingCost << endl;
 ///----------------------------------------------------------------------------------
 /// Tests
 /// Uncomment tests to work on them. Make sure any test that does not compile or
