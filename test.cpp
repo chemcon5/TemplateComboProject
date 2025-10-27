@@ -38,7 +38,9 @@ double getShippingCost(int ShippingMethod, double cost_of_order) {
    }
    if (ShippingMethod == 2) {
       cout << "2 day delivery" << endl;
-      if(ShippingCost <= 300)
+      if(ShippingCost <= 300) {
+         ShippingCost = order_cost * 0.02 + 10
+      }
    }
 }
 
