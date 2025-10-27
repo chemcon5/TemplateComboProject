@@ -97,6 +97,9 @@ int main() {
       }                                                                                                                                                                                                                               else {
       else {
         cout << "Total is: " << cost_of_order + ShippingCost << endl;
+      }
+    return 0;
+
 ///----------------------------------------------------------------------------------
 /// Tests
 /// Uncomment tests to work on them. Make sure any test that does not compile or
