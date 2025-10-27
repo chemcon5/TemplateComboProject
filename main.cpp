@@ -79,7 +79,7 @@ int main() {
    cout << "Enter your Shipping Method: "<< endl; 
    cin >> ShippingMethod;
 
-   if (ShippingMethod < 1 || ShippingMethod > 3)) {
+   if (ShippingMethod < 1 || ShippingMethod > 3) {
     cout << "Bad Input" << endl;
     return 1; 
    }
