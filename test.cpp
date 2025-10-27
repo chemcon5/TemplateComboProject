@@ -34,12 +34,12 @@ double getShippingCost(int ShippingMethod, double cost_of_order) {
          ShippingCost == 50;
       }
       else {
-         ShippingCost = order_cost * 0.1;
+         ShippingCost = cost_of_order * 0.1;
       }
    if (ShippingMethod == 2) {
       cout << "2 day delivery" << endl;
       if (cost_of_order <= 300) {
-         ShippingCost = order_cost * 0.02 + 10
+         ShippingCost = cost_of_order * 0.02 + 10
       }
       else (cost_of_order > 300) {
          cout << "Free" << endl;
