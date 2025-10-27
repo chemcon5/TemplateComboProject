@@ -34,18 +34,18 @@ double getShippingCost(int ShippingMethod, double cost_of_order) {
          ShippingCost = 50;
             }
       else {
-                                                                     ShippingCost = cost_of_order * 0.1;
-                                                                           }
-                                                                              }
-                                                                                 else if (ShippingMethod == 2) {
-                                                                                       cout << "2 day delivery" << endl;
-                                                                                             if (cost_of_order <= 300) {
-                                                                                                      ShippingCost = cost_of_order * 0.02 + 10;
-                                                                                                            }
-                                                                                                                  else {
-                                                                                                                           ShippingCost = -2;
-                                                                                                                                 }
-                                                                                                                                    }
+             ShippingCost = cost_of_order * 0.1;
+               }
+                    }
+                     else if (ShippingMethod == 2) {
+                            cout << "2 day delivery" << endl;
+                                      if (cost_of_order <= 300) {
+                                             ShippingCost = cost_of_order * 0.02 + 10;
+          }
+        else {
+      ShippingCost = -2;
+     }
+              }
                                                                                                                                        else if (ShippingMethod == 3) {
                                                                                                                                              cout << "Standard Delivery" << endl;
                                                                                                                                                    if (cost_of_order < 35) {
