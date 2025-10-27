@@ -68,24 +68,24 @@ double getShippingCost(int ShippingMethod, double cost_of_order) {
 }
 
 int main() {
-                int ShippingMethod=0;
-          double cost_of_order;
+  int ShippingMethod=0;
+  double cost_of_order;
 
-          cout << "Enter the cost of your order: " << endl;
-          cin >> cost_of_order;
+    cout << "Enter the cost of your order: " << endl;
+    cin >> cost_of_order;
 
-             if (cost_of_order < 0 ) {
-            cout << "Bad Input" << endl;
-                                    return 1; 
-               }
+      if (cost_of_order < 0 ) {
+        cout << "Bad Input" << endl;
+          return 1; 
+      }
 
-           cout << "Enter your Shipping Method: "<< endl; 
-         cin >> ShippingMethod;
+    cout << "Enter your Shipping Method: "<< endl; 
+    cin >> ShippingMethod;
 
-          if (ShippingMethod < 1 || ShippingMethod > 3) {
-           cout << "Bad Input" << endl;
-             return 1; 
-    }
+      if (ShippingMethod < 1 || ShippingMethod > 3) {
+        cout << "Bad Input" << endl;
+          return 1; 
+      }
 
            double ShippingCost = getShippingCost(ShippingMethod, cost_of_order);
 
