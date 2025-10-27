@@ -71,7 +71,7 @@ int main() {
    cout << "Enter the cost of your order: " << endl;
    cin >> cost_of_order;
 
-    if (cost_of_order < 0) {
+    if (cost_of_order < 0 || ShippingMethod < 1 || ShippingMethod > 3) {
         cout << "Bad Input" << endl;
         return 1; 
     }
