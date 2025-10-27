@@ -29,7 +29,7 @@ double getShippingCost(int ShippingMethod, double cost_of_order) {
       cout << "Drone Delivery" << endl;
       if (cost_of_order < 100) {
          cout << "Not Available" << endl;
-         ShippingCost = -1;
+         ShippingCost == -1;
       }
       else if (cost_of_order < 500) {
          ShippingCost = 50;
@@ -45,7 +45,7 @@ double getShippingCost(int ShippingMethod, double cost_of_order) {
       }
       else {
          cout << "Free" << endl;
-         ShippingCost = -1;
+         ShippingCost == -1;
       }
    }
    else if (ShippingMethod == 3) {
@@ -58,7 +58,7 @@ double getShippingCost(int ShippingMethod, double cost_of_order) {
       }
       else {
          cout << "Free" << endl;
-         ShippingCost = -1;
+         ShippingCost == -1;
       }
    }
    return ShippingCost;
@@ -85,7 +85,7 @@ int main() {
 
    double ShippingCost = getShippingCost(ShippingMethod, cost_of_order);
 
-    if (ShippingCost = -1) { 
+    if (ShippingCost == -1) { 
         cout << "Total is: " << cost_of_order + ShippingCost << endl;
     }
 
