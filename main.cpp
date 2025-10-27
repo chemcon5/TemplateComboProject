@@ -24,9 +24,9 @@ using namespace std;
 
 //Your getShippingCost here - don't forget the Doxygen comment!
 double getShippingCost(int ShippingMethod, double cost_of_order) { 
-  double ShippingCost = 0; 
-    if (ShippingMethod == 1) {
-      cout << "Drone Delivery" << endl;
+   double ShippingCost = 0; 
+      if (ShippingMethod == 1) {
+            cout << "Drone Delivery" << endl;
                   if (cost_of_order < 100) {
                            ShippingCost = -1;
                                  }
@@ -38,61 +38,59 @@ double getShippingCost(int ShippingMethod, double cost_of_order) {
                                                                            }
                                                                               }
                                                                                  else if (ShippingMethod == 2) {
-             cout << "2 day delivery" << endl;
-                               if (cost_of_order <= 300) {
+                                                                                       cout << "2 day delivery" << endl;
+                                                                                             if (cost_of_order <= 300) {
                                                                                                       ShippingCost = cost_of_order * 0.02 + 10;
-                     }
+                                                                                                            }
                                                                                                                   else {
                                                                                                                            ShippingCost = -2;
-                                    }
+                                                                                                                                 }
                                                                                                                                     }
-                                                else if (ShippingMethod == 3) {
+                                                                                                                                       else if (ShippingMethod == 3) {
                                                                                                                                              cout << "Standard Delivery" << endl;
                                                                                                                                                    if (cost_of_order < 35) {
-                                                              ShippingCost = 5;
+                                                                                                                                                            ShippingCost = 5;
                                                                                                                                                                   }
                                                                                                                                                                         else if (cost_of_order < 100) {
-                                                                                   ShippingCost = 8;
-        }
-                  else {
-                 ShippingCost = -2;
-                   }
-                      }
-                               return ShippingCost;
-                                   }
+                                                                                                                                                                                 ShippingCost = 8;
+                                                                                                                                                                                       }
+                                                                                                                                                                                             else {
+                                                                                                                                                                                                      ShippingCost = -2;
+                                                                                                                                                                                                            }
+                                                                                                                                                                                                               }
+                                                                                                                                                                                                                  return ShippingCost;
+                                                                                                                                                                                                                  }
 
-           int ShippingMethod=0;
-                  double cost_of_order;
+                                                                                                                                                                                                                  int main() {
+                                                                                                                                                                                                                     int ShippingMethod=0;
+                                                                                                                                                                                                                        double cost_of_order;
 
-           cout << "Enter the cost of your order: " << endl;
-                       cin >> cost_of_order;
+                                                                                                                                                                                                                           cout << "Enter the cost of your order: " << endl;
+                                                                                                                                                                                                                              cin >> cost_of_order;
 
-         if (cost_of_order < 0 ) {
-             cout << "Bad Input" << endl;
-               return 1; 
-           }
+                                                                                                                                                                                                                                  if (cost_of_order < 0 ) {
+                                                                                                                                                                                                                                          cout << "Bad Input" << endl;
+                                                                                                                                                                                                                                                  return 1; 
+                                                                                                                                                                                                                                                      }
 
-                          cout << "Enter your Shipping Method: "<< endl; 
-                 cin >> ShippingMethod;
+                                                                                                                                                                                                                                                         cout << "Enter your Shipping Method: "<< endl; 
+                                                                                                                                                                                                                                                            cin >> ShippingMethod;
 
-                        if (ShippingMethod < 1 || ShippingMethod > 3) {
-                      return 1; 
-         }
+                                                                                                                                                                                                                                                                if (ShippingMethod < 1 || ShippingMethod > 3) {
+                                                                                                                                                                                                                                                                      cout << "Bad Input" << endl;
+                                                                                                                                                                                                                                                                            return 1; 
+                                                                                                                                                                                                                                                                               }
 
-                           double ShippingCost = getShippingCost(ShippingMethod, cost_of_order);
+                                                                                                                                                                                                                                                                                  double ShippingCost = getShippingCost(ShippingMethod, cost_of_order);
 
-          if (ShippingCost = -1) {
-                                     cout << "Not available" << endl;
-           }
+                                                                                                                                                                                                                                                                                     if (ShippingCost = -1) {
+                                                                                                                                                                                                                                                                                           cout << "Not available" << endl;
+                                                                                                                                                                                                                                                                                              }
                                                                                                                                                                                                                                                                                                 else if (ShippingCost = -2) {
                                                                                                                                                                                                                                                                                                        cout << "Free" << endl;
                                                                                                                                                                                                                                                                                                          }
                                                                                                                                                                                                                                                                                                            else {
                                                                                                                                                                                                                                                                                                                   cout << "Total is: " << cost_of_order + ShippingCost << endl;
-                                                                                                                                                                                                                                                                                                                    } 
-                                                                                                                                                                                                                                                                                                                       return 0;
-                                                                                                                                                                                                                                                                                                                       }
-
 ///----------------------------------------------------------------------------------
 /// Tests
 /// Uncomment tests to work on them. Make sure any test that does not compile or
