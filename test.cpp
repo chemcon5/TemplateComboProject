@@ -28,13 +28,13 @@ double getShippingCost(int ShippingMethod, double cost_of_order) {
    if (ShippingMethod == 1) {
       cout << "Drone Delivery" << endl;
       if (cost_of_order < 100) {
-          cout << "Not Available" << endl;
+         cout << "Not Available" << endl;
       }
       else if (cost_of_order >=100 && cost_of_order < 500) {
          ShippingCost == 50;
       }
       else {
-        ShippingCost = order_cost * 0.1;
+         ShippingCost = order_cost * 0.1;
       }
    if (ShippingMethod == 2) {
       cout << "2 day delivery" << endl;
