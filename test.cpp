@@ -59,7 +59,7 @@ double getShippingCost(int ShippingMethod, double cost_of_order) {
    }
 }
 
-
+int main
 ///----------------------------------------------------------------------------------
 /// Tests
 /// Uncomment tests to work on them. Make sure any test that does not compile or
