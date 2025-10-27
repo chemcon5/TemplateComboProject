@@ -41,8 +41,11 @@ double getShippingCost(int ShippingMethod, double cost_of_order) {
       if (ShippingCost <= 300) {
          ShippingCost = order_cost * 0.02 + 10
       }
-      else (ShippingCost > 300)
+      else (ShippingCost > 300) {
+         cout << "Free" << endl;
+      }
    }
+   if
 }
 
 
