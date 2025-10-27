@@ -23,7 +23,9 @@ using namespace std;
 
 
 //Your getShippingCost here - don't forget the Doxygen comment!
-double getShippingCost(int ShippingMethod, double cost_of_order) {
+double getShippingCost(int ShippingMethod, double cost_of_order) 
+double ShippingCost 
+{
    if (ShippingMethod == 1) {
       cout << "Drone Delivery" << endl;
       if (ShippingCost < 100) {
