@@ -29,11 +29,11 @@ double getShippingCost(int ShippingMethod, double cost_of_order) {
             cout << "Drone Delivery" << endl;
                   if (cost_of_order < 100) {
                            ShippingCost = -1;
-                                 }
-                                       else if (cost_of_order < 500) {
-                                                ShippingCost = 50;
-                                                      }
-                                                            else {
+       }
+        else if (cost_of_order < 500) {
+         ShippingCost = 50;
+            }
+      else {
                                                                      ShippingCost = cost_of_order * 0.1;
                                                                            }
                                                                               }
