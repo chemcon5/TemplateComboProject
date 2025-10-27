@@ -66,7 +66,8 @@ int main() {
    double ShippingCost;
    cout << "Enter the cost of your order: " << endl;
    cin >> cost_of_order >> endl;
-   cin >> "Enter your Shipping Method: " >> ShippingMethod >> endl;
+   cout << "Enter your Shipping Method: "<< endl; 
+
    cout << "Total is" << endl;
 }
 ///----------------------------------------------------------------------------------
