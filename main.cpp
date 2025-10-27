@@ -38,37 +38,36 @@ double getShippingCost(int ShippingMethod, double cost_of_order) {
                                                                            }
                                                                               }
                                                                                  else if (ShippingMethod == 2) {
-                                                                                       cout << "2 day delivery" << endl;
-                                                                                             if (cost_of_order <= 300) {
+             cout << "2 day delivery" << endl;
+                               if (cost_of_order <= 300) {
                                                                                                       ShippingCost = cost_of_order * 0.02 + 10;
-                                                                                                            }
+                     }
                                                                                                                   else {
                                                                                                                            ShippingCost = -2;
-                                                                                                                                 }
+                                    }
                                                                                                                                     }
-                                                                                                                                       else if (ShippingMethod == 3) {
+                                                else if (ShippingMethod == 3) {
                                                                                                                                              cout << "Standard Delivery" << endl;
                                                                                                                                                    if (cost_of_order < 35) {
-                                                                                                                                                            ShippingCost = 5;
+                                                              ShippingCost = 5;
                                                                                                                                                                   }
                                                                                                                                                                         else if (cost_of_order < 100) {
-                                                                                                                                                                                 ShippingCost = 8;
-                                                                                                                                                                                       }
-                                                                                                                                                                                             else {
-                                                                                                                                                                                                      ShippingCost = -2;
-                                                                                                                                                                                                            }
-                                                                                                                                                                                                               }
-                                                                                                                                                                                                                  return ShippingCost;
-                                                                                                                                                                                                                  }
+                                                                                   ShippingCost = 8;
+        }
+                  else {
+                 ShippingCost = -2;
+                   }
+                      }
+                               return ShippingCost;
+                                   }
 
-                                                                                                                                                                                                                  int main() {
-                                                                                                                                                                                                                     int ShippingMethod=0;
-                                                                                                                                                                                                                        double cost_of_order;
+           int ShippingMethod=0;
+                  double cost_of_order;
 
-                                                                                                                                                                                                                           cout << "Enter the cost of your order: " << endl;
-                                                                                                                                                                                                                              cin >> cost_of_order;
+           cout << "Enter the cost of your order: " << endl;
+                       cin >> cost_of_order;
 
-                                                                                                                                                                                                                                  if (cost_of_order < 0 ) {
+                                                                                                                                                 if (cost_of_order < 0 ) {
                                                                                                                                                                                                                                           cout << "Bad Input" << endl;
                                                                                                                                                                                                                                                   return 1; 
                                                                                                                                                                                                                                                       }
