@@ -65,7 +65,7 @@ double getShippingCost(int ShippingMethod, double cost_of_order) {
 }
 
 int main() {
-   int ShippingMethod;
+   int ShippingMethod=0;
    double cost_of_order;
 
    cout << "Enter the cost of your order: " << endl;
