@@ -26,8 +26,9 @@ using namespace std;
 double getShippingCost(int ShippingMethod, double cost_of_order) {
    if (ShippingMethod == 1) {
       cout << "Drone Delivery" << endl;
-      ShippingCost = "$"50 
+      ShippingCost = "$50"; 
    }
+   
 }
 
 
