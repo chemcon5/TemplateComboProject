@@ -87,7 +87,7 @@ int main() {
           return 1; 
       }
 
-           double ShippingCost = getShippingCost(ShippingMethod, cost_of_order);
+    double ShippingCost = getShippingCost(ShippingMethod, cost_of_order);
 
          if (ShippingCost = -1) {
             cout << "Not available" << endl;
